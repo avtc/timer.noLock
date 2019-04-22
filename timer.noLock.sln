@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dbCmd.noLock", "dbCmd.noLock\dbCmd.noLock.csproj", "{EFDE7A0C-C815-4377-8729-E7AE007E90F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq2db.dbCmd.noLock", "linq2db.dbCmd.noLock\linq2db.dbCmd.noLock.csproj", "{84C8330B-8553-4A5A-AA5A-AC0649AA572D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFDE7A0C-C815-4377-8729-E7AE007E90F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDE7A0C-C815-4377-8729-E7AE007E90F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDE7A0C-C815-4377-8729-E7AE007E90F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDE7A0C-C815-4377-8729-E7AE007E90F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C8330B-8553-4A5A-AA5A-AC0649AA572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C8330B-8553-4A5A-AA5A-AC0649AA572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C8330B-8553-4A5A-AA5A-AC0649AA572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C8330B-8553-4A5A-AA5A-AC0649AA572D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02046956-DACD-4EC6-8F1E-EC1F5A54D13E}
+	EndGlobalSection
+EndGlobal

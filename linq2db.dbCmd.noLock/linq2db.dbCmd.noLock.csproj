@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net46;netcoreapp1.0;netcoreapp2.0;netstandard1.6;netstandard2.0</TargetFrameworks>
+    <Authors>avtc</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright></Copyright>
+    <PackageLicenseUrl>https://github.com/linq2db/linq2db/blob/master/MIT-LICENSE.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/avtc/timer.noLock</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>DbCommand;Lock Contention;linq2db</PackageTags>
+    <Description>Initiate sql queries in single thread to overcome lock contention in TimerQueue.Timer for linq2db</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="linq2db" Version="2.7.1-dbcmdproc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dbCmd.noLock\dbCmd.noLock.csproj" />
+  </ItemGroup>
+
+</Project>
