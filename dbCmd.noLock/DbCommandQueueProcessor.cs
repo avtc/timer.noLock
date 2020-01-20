@@ -85,7 +85,7 @@ namespace dbCmd.noLock
 							dto.Cmd.ExecuteScalarAsync(dto.CancellationToken)
 								.ContinueWith((t, obj) => t.MarshalTaskResults((TaskCompletionSource<object>)obj),
 								dto.TcsObject,
-								dto.CancellationToken,
+								CancellationToken.None,
 								_taskContinuationOptions,
 								TaskScheduler.Default);
 							break;
@@ -93,7 +93,7 @@ namespace dbCmd.noLock
 							dto.Cmd.ExecuteNonQueryAsync(dto.CancellationToken)
 								.ContinueWith((t, obj) => t.MarshalTaskResults((TaskCompletionSource<int>)obj),
 								dto.TcsInt,
-								dto.CancellationToken,
+                                CancellationToken.None,
 								_taskContinuationOptions,
 								TaskScheduler.Default);
 							break;
@@ -101,7 +101,7 @@ namespace dbCmd.noLock
 							dto.Cmd.ExecuteReaderAsync(dto.CancellationToken)
 								.ContinueWith((t, obj) => t.MarshalTaskResults((TaskCompletionSource<DbDataReader>)obj),
 								dto.TcsReader,
-								dto.CancellationToken,
+                                CancellationToken.None,
 								_taskContinuationOptions,
 								TaskScheduler.Default);
 							break;

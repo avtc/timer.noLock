@@ -11,6 +11,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>DbCommand;Lock Contention</PackageTags>
     <Description>Initiate sql queries in single thread to overcome lock contention in TimerQueue.Timer</Description>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>1.0.1 Fixed continuation of failed query when CancellationToken specified</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
